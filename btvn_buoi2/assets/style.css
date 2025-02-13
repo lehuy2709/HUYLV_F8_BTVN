@@ -1,0 +1,21 @@
+th {
+    font-size: 22px;
+}
+
+.sub-title {
+    font-size: 18px;
+}
+
+.sub-title:nth-child(2),
+.sub-title:nth-child(3),
+.topic {
+    text-align: center;
+}
+
+.schedule-off {
+    text-align: center;
+}
+
+.contact>p {
+    margin: 0;
+}
