@@ -1,0 +1,37 @@
+#form-sigin {
+    max-width: 400px;
+}
+
+#form-sigin>.box-username,
+.box-password,
+.box-city {
+    display: flex;
+    padding: 10px 0;
+}
+
+#username,
+#pwd,
+#city {
+    margin-left: 10px;
+    flex: 1;
+}
+
+.box-option,
+.box-role,
+.box-sign-on {
+    margin: 10px 0;
+}
+
+.box-role,
+.box-sign-on {
+    display: flex;
+}
+
+.box-role-choose,
+.box-signon-check {
+    padding-left: 10px;
+}
+
+.action {
+    text-align: center;
+}

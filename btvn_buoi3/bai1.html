@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="assets/bai1.css">
+</head>
+
+<body>
+    <div class="signup">
+
+        <div class="title-sigup">
+            <div class="title-head">
+                <h1>Try a free sample</h1>
+            </div>
+            <div class="title-description">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+            </div>
+        </div>
+
+        <div class="singup-box">
+            <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+                <div id="form-signup">
+                    <div class="sigup-box-right">
+                        <div class="first-name">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="fname" id="fname" placeholder="John">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="John@gmail.com">
+                        </div>
+                        <div class="city">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" placeholder="John">
+                        </div>
+                        <div class="zipcode">
+                            <label for="zipcode">Zipcode</label>
+                            <input type="text" name="zipcode" id="zipcode" placeholder="John">
+                        </div>
+
+                    </div>
+                    <div class="sigup-box-left">
+                        <div class="last-name">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lname" id="lname" placeholder="John">
+                        </div>
+                        <div class="address">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address" placeholder="John">
+                        </div>
+                        <div class="state">
+                            <label for="state">State</label>
+                            <input type="text" name="state" id="state" placeholder="John">
+                        </div>
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="UK">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="AU">Australia</option>
+                                <option value="VN">Vietnam</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">SEND ME FREE COFFE</button>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

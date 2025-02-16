@@ -1,0 +1,44 @@
+* {
+    font-family: Roboto;
+}
+
+form {
+    max-width: 400px;
+}
+
+#form-signup {
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-name,
+.email,
+.city,
+.zipcode,
+.last-name,
+.address,
+.state,
+.country {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+label {
+    font-size: 14px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+button {
+    margin: 10px 0;
+    color: white;
+    padding: 5px;
+    width: 89%;
+    background-color: rgb(96, 255, 96);
+    border: none;
+    cursor: pointer;
+}

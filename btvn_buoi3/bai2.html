@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="assets/bai2.css">
+</head>
+
+<body>
+    <form action="#" method="post" id="form-sigin">
+        <div class="box-username">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div class="box-password">
+            <label for="pwd">Password: </label>
+            <input type="password" name="pwd" id="pwd">
+        </div>
+        <div class="box-city">
+            <label for="city">City of Employment: </label>
+            <input type="text" name="city" id="city">
+        </div>
+        <div class="box-option">
+            <label for="server">Web server:</label> <select id="server" name="server">
+                <option value="0" selected>-- Choose of server --</option>
+                <option value="US">United States</option>
+                <option value="AU">Australia</option>
+                <option value="VN">Vietnam</option>
+            </select>
+
+        </div>
+        <div class="box-role">
+            <div class="box-role-tile">
+                <label for="role"> Please specify<br> your role:</label>
+            </div>
+            <div class="box-role-choose">
+                <input type="radio" name="role" value="Admin">
+                <label>Admin</label><br>
+                <input type="radio" name="role" value="Supervisor">
+                <label>Supervisor</label><br>
+                <input type="radio" name="role" value="Manager">
+                <label>Manager</label>
+            </div>
+
+        </div>
+        <div class="box-sign-on">
+            <div class="box-signon-tile">
+                <label for="role">Single Sign-on<br> the following: </label>
+            </div>
+            <div class="box-signon-check">
+                <input name="mail" type="checkbox">mail<br>
+                <input name="payroll" type="checkbox">payroll<br>
+                <input name="self-service" type="checkbox">self-service<br>
+            </div>
+        </div>
+        <div class="action">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

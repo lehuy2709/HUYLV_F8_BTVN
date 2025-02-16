@@ -1,0 +1,47 @@
+* {
+    font-family: roboto;
+}
+
+.contact {
+    background-color: rgba(107, 107, 107, 0.33);
+    padding: 0 10px;
+}
+
+.top-contact {
+    display: flex;
+    margin: 10px 0;
+    justify-content: flex-start;
+}
+
+.full-name-two {
+    margin-left: 10px;
+}
+
+.content {
+    margin: 10px 0;
+}
+
+.send-contact {
+    display: flex;
+    justify-self: center;
+    padding-bottom: 20px;
+}
+
+.notify {
+    align-content: center;
+}
+
+.notify>p {
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.action-submit {
+    background-color: rgba(68, 63, 63, 0.33);
+    outline: none;
+    color: white;
+    border: none;
+    width: 120px;
+    padding: 10px;
+    cursor: pointer;
+}
