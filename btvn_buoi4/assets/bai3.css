@@ -1,0 +1,44 @@
+* {
+    font-family: roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* selector theo thẻ */
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+/* selector theo id */
+#product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* selector theo class */
+.card {
+    text-align: center;
+    border: 1px solid rgb(131, 237, 131);
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+/* selector con */
+.card>h2 {
+    color: pink;
+}
+
+/* selector anh chị em  */
+.card p {
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.card>p>button {
+    width: 200px;
+    height: 40px;
+    background-color: aqua;
+}

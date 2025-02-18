@@ -1,0 +1,63 @@
+* {
+    font-family: roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: rgb(33, 138, 143);
+    padding: 10px;
+}
+
+.title {
+    margin: 10px 0;
+}
+
+.title>h2 {
+    color: white;
+}
+
+.strong-title {
+    color: orange;
+}
+
+.slogan {
+    padding: 10px 0;
+}
+
+.slogan>p {
+    color: white;
+}
+
+.send-form>form {
+    display: flex;
+}
+
+.box-submit {
+    margin-left: 10px;
+}
+
+.box-email>input {
+    padding: 10px 10px 10px;
+}
+
+.box-submit>input {
+    padding: 10px 30px;
+}
+
+.box-email>input:hover {
+    color: orange;
+    background-color: #ddd;
+}
+
+.box-submit>input {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.box-submit>input:hover {
+    background-color: orange;
+    color: #fff;
+}

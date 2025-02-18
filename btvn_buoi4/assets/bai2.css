@@ -1,0 +1,17 @@
+* {
+    font-family: roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    display: block;
+    padding: 10px 20px;
+}
+
+ul>li::before {
+    padding-right: 10px;
+    content: "😄";
+
+}
