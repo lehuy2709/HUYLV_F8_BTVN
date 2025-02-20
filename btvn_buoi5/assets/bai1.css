@@ -1,0 +1,36 @@
+.box-1,
+.box-2,
+.box-3 {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+label {
+     background-color: orange;
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+    font-family: "roboto";
+}
+
+.content-box {
+    display: none;
+}
+
+input[type="checkbox"]:checked+label+.content-box {
+    display: block;
+}
+
+input {
+    display: none;
+}
+
+input+label::before {
+    content: "+ ";
+}
+
+input[type="checkbox"]:checked+label::before {
+    content: "- ";
+}

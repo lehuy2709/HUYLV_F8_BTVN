@@ -1,0 +1,54 @@
+* {
+    font-family: roboto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+i {
+    font-size: 60px;
+    color: orange;
+}
+
+.icon {
+    align-content: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+#product {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(117, 122, 46);
+    border-radius: 4%;
+    min-height: 400px;
+}
+
+.decription {
+    padding: 20px;
+    color: rgb(92, 87, 87);
+}
+
+button {
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+    color: white;
+    background-color: orange;
+    outline: none;
+    border: none;
+}
