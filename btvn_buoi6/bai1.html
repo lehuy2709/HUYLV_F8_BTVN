@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="./assets/bai1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="post" id="form-contact">
+            <div class="title-form mg-bot-20">
+                <h1 class="pa-top-bot-20">Hey There</h1>
+                <p> <span class="emphasis-title emphasis-title-orange "> Lorem ipsum dolor sit amet </span>consectetur
+                    adipiscing elit. In
+                    porttitor luctus tellus vel pharetra.
+                    Suspendisse malesuada vestibulum tincidunt. Sed et condimentum dui. Interdum et malesuada fames ac
+                    ante ipsum primis in faucibus.</p>
+            </div>
+            <div class="box-name mg-bot-20 pos-relative">
+                <input class="typing-name w-300 pa-15 mg-left--40" type="text" name="fname" id="f-name"
+                    placeholder="Your name" required>
+                <div class="icon-person icon d-inline-block pos-absolute">
+                    <i class="icon-child bi bi-person-fill f-size-25 "></i>
+                </div>
+                <div class="icon-star d-inline-block pos-absolute">
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="icon-x  d-inline-block pos-absolute d-none">
+                    <i class="bi bi-x f-size-18"></i>
+                </div>
+                <div class="box-alert-parent pos-absolute d-none">
+                    <p>Enter your name</p>
+                    <div class="box-alert-child pos-absolute"></div>
+                </div>
+            </div>
+            <div class="box-email mg-bot-20 pos-relative">
+                <input class="typing-email w-300 pa-15 mg-left--40" type="email" name="femail" id="f-email"
+                    placeholder="Your@domain.com" required>
+                <div class="icon-email icon d-inline-block pos-absolute">
+                    <i class="icon-child bi bi-envelope f-size-25  "></i>
+                </div>
+                <div class="icon-star d-inline-block pos-absolute">
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="icon-x  d-inline-block pos-absolute d-none">
+                    <i class="bi bi-x f-size-18"></i>
+                </div>
+                <div class="box-alert-parent pos-absolute d-none">
+                    <p>Enter your email</p>
+                    <div class="box-alert-child pos-absolute"></div>
+                </div>
+            </div>
+            <div class="box-phone  mg-bot-20 pos-relative">
+                <input class="typing-phone w-300 pa-15 mg-left--40" type="number" name="fphone" id="f-phone"
+                    placeholder="+84 0000" required>
+                <div class="icon-phone icon d-inline-block pos-absolute">
+                    <i class="icon-child bi bi-phone f-size-25  "></i>
+                </div>
+                <div class="box-alert-parent pos-absolute d-none">
+                    <p>Enter your phone</p>
+                    <div class="box-alert-child pos-absolute"></div>
+                </div>
+            </div>
+            <div class="box-subject mg-bot-20 pos-relative">
+                <select name="fsubject" id="f-subject" class="typing-subject w-300 pa-15 mg-left--40">
+                    <option value="0" selected>Subject</option>
+                    <option value="php">PHP</option>
+                    <option value="js">Javascript</option>
+                    <option value="html">Html&css</option>
+                    <option value="docker">Docker</option>
+                </select>
+                <div class="icon-subject icon d-inline-block pos-absolute">
+                    <i class="icon-child bi bi-file-earmark-text-fill f-size-25 "></i>
+                </div>
+                <div class="icon-arrow d-inline-block pos-absolute">
+                    <i class="bi bi-arrow-down-up"></i>
+                </div>
+            </div>
+            <div class="box-descripton  mg-bot-20 pos-relative">
+                <textarea name="fdes" id="f-des" placeholder="Message" class="typing-desc w-300 pa-15 mg-left--40"
+                    required></textarea>
+                <div class="icon-desc icon d-inline-block pos-absolute">
+                    <i class="icon-child icon-child-center bi bi-chat-left-fill f-size-25  "></i>
+                </div>
+                <div class="icon-star d-inline-block pos-absolute">
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="box-alert-parent pos-absolute d-none">
+                    <p>Enter your text</p>
+                    <div class="box-alert-child pos-absolute"></div>
+                </div>
+            </div>
+            <div class="box-submit d-flex ">
+                <div class="left-box">
+                    <input type="checkbox" name="check" id="check-submit" checked>
+                    <label for="check-submit" class="font-size-18 color-grey">Send me copy of this message</label>
+                </div>
+                <div class="right-box ">
+                    <button class="color-white" type="submit">SEND</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

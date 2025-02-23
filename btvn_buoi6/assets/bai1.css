@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.color-white {
+    color: #fff;
+}
+.color-grey{
+    color: grey;
+}
+
+.pa-right-left-5 {
+    padding: 0 5px;
+}
+
+.pa-10 {
+    padding: 10px;
+}
+
+.pa-15 {
+    padding: 15px;
+}
+
+.pa-top-bot-20 {
+    padding: 20px 0;
+}
+
+.pa-top-bot-10 {
+    padding: 10px 0;
+}
+
+.pa-bot-10 {
+    padding-bottom: 10px;
+}
+
+.mg-bot-20 {
+    margin-bottom: 20px;
+}
+
+.mg-left--40 {
+    margin-left: 40px;
+}
+
+.mg-right-50 {
+    margin-right: 50px;
+}
+
+.w-300 {
+    width: 300px;
+}
+
+.f-size-43 {
+    font-size: 43.5px;
+}
+
+.f-size-14 {
+    font-size: 14px;
+}
+
+.f-size-18 {
+    font-size: 18px;
+}
+
+.f-size-25 {
+    font-size: 25px;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.emphasis-title-orange {
+    color: rgb(252, 60, 13);
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #fff;
+    background-color: #ccc;
+}
+
+.icon-child {
+    position: absolute;
+    transform: translateX(13px) translateY(10px);
+}
+
+.icon-person,
+.icon-email,
+.icon-phone {
+    width: 50px;
+    height: 50px;
+    left: 0;
+}
+
+.icon-subject {
+    width: 50px;
+    height: 49px;
+    left: 0;
+}
+
+.icon-desc {
+    width: 50px;
+    height: 250px;
+    left: 0;
+}
+
+.icon-child-center {
+    top: 40%;
+}
+
+.icon-star,
+.icon-x,
+.icon-arrow {
+    font-size: 10px;
+    top: 40%;
+    left: 32%;
+    color: #ccc;
+}
+
+.typing-name,
+.typing-email,
+.typing-phone,
+.typing-subject,
+.typing-desc {
+    border: 2px solid #ccc;
+}
+
+.box-alert-parent {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    top: -100%;
+    left: 50px;
+    align-content: center;
+}
+
+.box-alert-parent>p {
+    padding: 0 14px;
+    color: #fff;
+}
+
+.box-alert-child {
+    top: 35px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-width: 14px;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid #000000;
+}
+
+textarea {
+    height: 250px;
+}
+
+select {
+    appearance: none;
+}
+
+input:focus~.box-alert-parent {
+    display: block;
+}
+
+input:focus~.icon-person {
+    background-color: black;
+
+}
+
+input:focus~.icon-email {
+    background-color: black;
+
+}
+
+input:focus~.icon-phone {
+    background-color: black;
+
+}
+
+.box-subject:hover select {
+    border: 2px solid black;
+}
+
+.box-subject:hover .icon-subject {
+    background-color: black;
+}
+
+select:focus~.icon-subject {
+    background-color: black;
+
+}
+
+input:focus~.icon-star {
+    display: none;
+
+}
+
+input:focus~.icon-x {
+    display: block;
+}
+
+textarea:focus~.icon-desc {
+    background-color: black;
+}
+.box-submit{
+    gap: 18px;
+}
+#check-submit{
+    margin-right: 15px;
+}
+#check-submit:checked::after{
+    padding: 5px;
+    appearance: none;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    background-color: white;
+    content: "✔";
+}
+.right-box{
+    margin-right: -300px;
+}
+.right-box>button{
+    background-color: rgb(252, 17, 17);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    
+}

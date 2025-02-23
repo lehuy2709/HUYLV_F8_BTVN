@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: roboto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.btn-menu {
+    margin-left: 10px;
+    height: 30px;
+    width: 110px;
+    margin-right: 500px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background-color: #f1eaea;
+}
+
+.icon {
+    font-size: 15px;
+}
+
+.nav-items {
+    flex: 1;
+}
+
+ul>li {
+    display: inline-block;
+}
+
+ul>li>a {
+    padding-left: 20px;
+    color: #111;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-drop {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.btn-joinnow {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #2d5bff, #b06ab3);
+}
