@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #545454;
+}
+
+.container {
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo>img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav__tablet>li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.nav__tablet>li>a {
+    text-decoration: none;
+    color: #545454;
+    font-weight: 600;
+}
+
+i {
+    font-size: 14px;
+}
+
+.sub__nav__tablet--drop>li {
+    list-style: none;
+}
+
+.sub__nav__tablet--drop>li a {
+    text-decoration: none;
+    list-style: none;
+    color: #545454;
+    font-size: 15px;
+}
+
+.nav__tablet--parent {
+    position: relative;
+}
+
+.sub__nav__tablet--drop {
+    min-width: 200px;
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.07);
+    border: 1px solid #eee;
+    display: none;
+}
+
+.sub__nav__tablet--drop>li {
+    padding: 10px 10px;
+
+}
+
+.sub__nav__tablet--drop>li>a {
+    font-weight: 400;
+}
+
+.sub__nav__tablet--drop li:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 15px 8px rgba(0, 0, 0, 0.07);
+}
+
+.sub__nav__tablet--drop li:hover a {
+    color: #5caf90;
+}
+
+.nav__tablet--parent:hover>a {
+    color: #5caf90;
+}
+
+.nav__tablet--parent:hover .sub__nav__tablet--drop {
+    display: block;
+}
+
+.nav__tablet--parent:hover:nth-of-type(4) .sub__nav__tablet--drop {
+    right: -50%;
+}
+
+.nav__tablet--parent:hover:last-child .sub__nav__tablet--drop {
+    right: -10%;
+}
+
+.nav-mobile,.btn-sub-menu {
+    display: none;
+} 
+
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-mobile>i {
+    font-size: 35px;
+    cursor: pointer;
+}
+.nav__tablet>li>label{
+    color: #545454;
+    font-weight: 600;
+}
+.icon-sub{
+    font-size: 16px;
+}
+.nav__tablet--parent>a{
+    display: block;
+}
+.nav__tablet--parent>label{
+    display: none;
+}

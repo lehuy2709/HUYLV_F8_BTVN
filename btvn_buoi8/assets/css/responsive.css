@@ -1,0 +1,64 @@
+@media screen and (max-width: 1023px) {
+    .nav__tablet {
+        display: none;
+    }
+
+    button {
+        display: block;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .nav__tablet--parent>a {
+        display: none;
+    }
+
+    .and--mobile {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        width: 250px;
+        background-color: rgb(243, 232, 219);
+        height: 100%;
+    }
+
+    .nav__tablet>li {
+        display: block;
+    }
+
+    .nav__tablet--parent:nth-of-type(1)>a {
+        display: block;
+    }
+
+    .nav__tablet--parent>label {
+        display: block;
+    }
+
+    .btn-sub-menu:checked~.and--mobile {
+        display: block;
+    }
+
+    .btn-sub-menu:checked~.overlay {
+        display: block;
+    }
+
+    .sub-menu-mobile:checked~.sub__nav__tablet--drop {
+        display: block;
+    }
+
+    .sub__nav__tablet--drop {
+        position: relative;
+    }
+
+    .nav__tablet--parent:hover:nth-of-type(4) .sub__nav__tablet--drop {
+        right: 0;
+    }
+
+    .nav__tablet--parent:hover:last-child .sub__nav__tablet--drop {
+        right: 0%;
+    }
+}
