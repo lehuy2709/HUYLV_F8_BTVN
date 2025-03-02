@@ -217,7 +217,7 @@ header {
 .sidebar {
     display: none;
     /* background-color: #d3d3d3; */
-    width: 15%;
+    width: 17%;
     position: fixed;
     top: 56px;
     left: 0;
@@ -233,7 +233,7 @@ header {
 }
 
 .sidebar__sub {
-    width: 7%;
+    width: 9%;
     position: fixed;
     top: 56px;
     left: 0;
