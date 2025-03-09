@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./video.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navigation">
+                <div class="navigation__menu">
+                    <label for="open-sidebar" class="navigation__menu__btn mdi mdi-menu"></label>
+                    <a href="./index.html"><img src="./img/logoyt.png" alt="logo-ytb" class="logo"></a>
+                </div>
+                <div class="navigation__search">
+                    <form action="#" class="form-search">
+                        <input type="search" name="search" placeholder="Tìm kiếm">
+                        <span class="mdi mdi-search-web"></span>
+                        <button class="mdi mdi-magnify"></button>
+                        <button class="mdi mdi-keyboard"></button>
+                    </form>
+                    <div class="micro">
+                        <button class="mdi mdi-microphone"></button>
+                        <p class="hover-noti">Tìm kiếm bằng giọng nói</p>
+                    </div>
+                </div>
+                <div class="navigation__options">
+                    <label class="btn-create" for="popup">
+                        <span class="mdi mdi-plus"></span>
+                        <span class="btn-create-name">Tạo</span>
+                    </label>
+                    <div class="mdi mdi-bell-outline icon-notifi">
+                        <span>2</span>
+                        <p class="hover-bell">Thông báo</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="./img/avatar.jpg" alt="avatar">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <input type="checkbox" id="popup" hidden>
+        <ul class="deploy-dialog">
+            <li> <a href="#">
+                    <span class="mdi mdi-play-box-outline icon-sub-sidebar"></span><span>Tải video
+                        lên</span>
+                </a></li>
+            <li> <a href="#">
+                    <span class="mdi mdi-access-point icon-sub-sidebar"></span><span>Phát trực
+                        tiếp</span>
+                </a></li>
+            <li> <a href="#">
+                    <span class="mdi mdi-pencil-box-outline icon-sub-sidebar"></span><span>Tạo bài
+                        đăng</span>
+                </a></li>
+        </ul>
+        <label class="overlay-mobile" for="popup"></label>
+        <input type="checkbox" id="open-sidebar" hidden>
+        <label class="overlay" for="open-sidebar"></label>
+        <div class="sidebar">
+            <div class="sidebar__section">
+                <div class="navigation__menu">
+                    <label for="open-sidebar" class="navigation__menu__btn mdi mdi-menu"></label>
+                    <a href="#"><img src="./img/logoyt.png" alt="logo-ytb"></a>
+                </div>
+            </div>
+            <div class="sidebar__section">
+                <a href="#" class="siderbar__section__link siderbar__section__link--selected">
+                    <span class="mdi mdi-home icon-siderbar"></span><span>Trang chủ</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-eye-outline icon-siderbar"></span>
+                    <span>Shorts</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-youtube-subscription icon-siderbar"></span><span>Kênh đăng ký</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-music-circle-outline icon-siderbar"></span><span>Youtube Music</span>
+                </a>
+            </div>
+            <div class="sidebar__section">
+                <a href="#" class="siderbar__section__link ab-me">
+                    <span class="is-me">Bạn </span>
+                    <span class="mdi mdi-chevron-right icon-siderbar"></span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi mdi-history icon-siderbar"></span><span>Video đã xem</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-playlist-play icon-siderbar"></span>
+                    <span>Danh sách phát</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-play-circle-outline icon-siderbar"></span><span>Video của bạn</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-clock-outline icon-siderbar"></span><span>Xem sau</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-thumb-up icon-siderbar"></span><span>Video đã thích</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-arrow-collapse-down icon-siderbar"></span><span>Nội dung tải xuống</span>
+                </a>
+            </div>
+            <div class="sidebar__section">
+                <a href="#" class="siderbar__section__link ab-me">
+                    <span class="is-me">Kênh đăng ký </span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <img src="./img/avatar-sena.jpg" alt="avartar channel" class="avatar-sidebar">
+                    <span class="siderbar__section__channel">Sena livestream </span>
+                    <span class="mdi mdi-access-point icon-siderbar-channel"></span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <img src="./img/avatar-tuanhung.jpg" alt="avartar channel" class="avatar-sidebar">
+                    <span class="siderbar__section__channel">Sena livestream</span>
+                    <span class="mdi mdi-access-point icon-siderbar-channel"></span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <img src="./img/avatar-th.jpg" alt="avartar channel" class="avatar-sidebar">
+                    <span class="siderbar__section__channel">Sena livestream</span>
+                    <span class="mdi mdi-access-point icon-siderbar-channel"></span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <img src="./img/avatar-sena.jpg" alt="avartar channel" class="avatar-sidebar">
+                    <span class="siderbar__section__channel">Sena livestream</span>
+                    <span class="mdi mdi-access-point icon-siderbar-channel"></span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <img src="./img/avatar-sena.jpg" alt="avartar channel" class="avatar-sidebar">
+                    <span class="siderbar__section__channel">Sena livestream</span>
+                    <span class="mdi mdi-access-point icon-siderbar-channel"></span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <img src="./img/avatar-sena.jpg" alt="avartar channel" class="avatar-sidebar">
+                    <span class="siderbar__section__channel">Sena livestream</span>
+                    <span class="mdi mdi-access-point icon-siderbar-channel"></span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-chevron-down icon-siderbar"></span>
+                    <span class="btn-add">Thêm </span>
+                </a>
+            </div>
+            <div class="sidebar__section">
+                <a href="#" class="siderbar__section__link ab-me">
+                    <span class="is-me">Khám phá</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-fire icon-siderbar"></span><span>Thịnh hành</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-music icon-siderbar"></span>
+                    <span>Âm nhạc</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-youtube-gaming icon-siderbar"></span><span>Trò chơi</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-newspaper icon-siderbar"></span><span>Tin tức</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-trophy icon-siderbar"></span><span>Thể thao</span>
+                </a>
+            </div>
+            <div class="sidebar__section">
+                <a href="#" class="siderbar__section__link ab-me">
+                    <span class="is-me">Dịch vụ khác của youtube</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-play-circle-outline icon-siderbar icon-red"></span><span>Youtube Studio</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-youtube-gaming icon-siderbar icon-red"></span><span>Youtube Music</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-newspaper icon-siderbar icon-red"></span><span>Youtube Kids</span>
+                </a>
+            </div>
+            <div class="sidebar__section">
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-cog-outline icon-siderbar"></span><span>Cài đặt</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-flag-outline icon-siderbar"></span><span>Nhật ký báo cáo</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-help-circle-outline icon-siderbar"></span><span>Trợ giúp</span>
+                </a>
+                <a href="#" class="siderbar__section__link">
+                    <span class="mdi mdi-newspaper icon-siderbar"></span><span>Gửi ý kiến phản hồi</span>
+                </a>
+            </div>
+            <div class="sidebar__section sidebar-footer">
+                <div class="sidebar-footer-top">
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Báo chí</a>
+                    <a href="#">Bản quyền</a>
+                    <a href="#">Liên hệ với chúng tôi</a>
+                    <a href="#">Người sáng tạo</a>
+                    <a href="#">Quảng cáo</a>
+                    <a href="#">Nhà phát triển</a>
+                </div>
+                <div class="sidebar-footer-bot">
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Báo chí</a>
+                    <a href="#">Bản quyền</a>
+                    <a href="#">Liên hệ với chúng tôi</a>
+                    <a href="#">Người sáng tạo</a>
+                    <a href="#">Quảng cáo</a>
+                    <a href="#">Nhà phát triển</a>
+                </div>
+                <div class="sidebar-footer-end">
+                    © 2025 Huy Lê Văn
+                </div>
+
+            </div>
+        </div>
+        <div class="content__wrapper">
+            <div class="video-detail">
+                <video controls>
+                    <source
+                        src="./videos/Forget About Her - Touliver x JustaTee (Thái Hoàng Remix) ⧸ Hot Việt Mix 2025 (online-video-cutter.com).mp4"
+                        type="video/mp4">
+                </video>
+                <h1 class="title-video">
+                    Forget About Her - Touliver x JustaTee (Thái Hoàng Remix) / Hot Việt Mix 2025
+                </h1>
+                <div class="above-the-fold">
+                    <div class="owner">
+                        <div class="channel">
+                            <div class="info">
+                                <img src="./img/avatar-th.jpg" alt="Channel Logo" class="icon" />
+                                <div class="channel-details">
+                                    <p class="channel-name">Thái Hoàng Official</p>
+                                    <p class="subs">294 N người đăng ký</p>
+                                </div>
+                            </div>
+                            <div class="subscribed">
+                                <span class="mdi mdi-bell-outline icon-subcribed"></span>
+                                <span class="text-subcribed">Đã Đăng ký</span>
+                                <span class="mdi mdi-chevron-down"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="action-like-dislike">
+                            <div class="like">
+                                <button class="mdi mdi-thumb-up-outline icon-like">
+                                </button><span class="total-like"> 1,2N </span>
+                            </div>
+                            <div class="border-mid"></div>
+                            <div class="dislike">
+                                <button class="mdi mdi-thumb-down-outline icon-dislike"></button>
+                            </div>
+                        </div>
+                        <div class="action-share">
+                            <span class="mdi mdi-share-outline icon-share"></span>
+                            <span class="text-share">Chia sẻ</span>
+                        </div>
+                        <div class="action-dowload">
+                            <span class="mdi mdi-arrow-collapse-down  icon-share"></span>
+                            <span class="text-share">Tải xuống</span>
+                        </div>
+                        <div class="action-thank">
+                            <span class="mdi mdi-heart-outline icon-share"></span>
+                            <span class="text-share">Cảm ơn</span>
+                        </div>
+                        <div class="action-more">
+                            <label class="mdi mdi-dots-horizontal icon-share" for="more">
+                                <input type="checkbox" id="more" hidden>
+                                <ul class="more">
+                                    <li> <a href="#">
+                                            <span class="mdi mdi mdi-content-cut icon-sub-sidebar"></span><span>Tạo đoạn
+                                                video</span>
+                                        </a></li>
+                                    <li> <a href="#">
+                                            <span class="mdi mdi-access-point icon-sub-sidebar"></span><span>Lưu</span>
+                                        </a></li>
+                                    <li> <a href="#">
+                                            <span class="mdi mdi-flag-outline icon-sub-sidebar"></span><span>Báo cáo vi
+                                                phạm</span>
+                                        </a></li>
+                                </ul>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="date-views">
+                        <span class="num-views">19 N lượt xem</span>
+                        <span class="date">3 ngày trước</span>
+                        <span class="hastags">#THOfficial #forgetabouther #THteam</span>
+                    </div>
+                    <div class="descripton-sub">
+                        <span>Forget About Her - Touliver x JustaTee (Thái Hoàng Remix) / Hot Việt Mix 2025</span>
+                    </div>
+                    <div class="descripton-end">
+                        <span>Thái Hoàng Official - Kênh chính thức của DJ/Producer Thái Hoàng
+                            LIÊN HỆ BOOKING : ZALO/SĐT:0944355555</span>
+                    </div>
+                </div>
+            </div>
+            <div class="suggest-video">
+                <div class="tags">
+                    <div class="tags-item"><a href="#">Tất cả</a></div>
+                    <div class="tags-item"><a href="#">Âm nhạc</a></div>
+                    <div class="tags-item"><a href="#">Tin tức</a></div>
+                    <div class="tags-item"><a href="#">Trò chơi</a></div>
+                    <div class="tags-item"><a href="#">Danh sách kết hợp</a></div>
+                    <div class="tags-item"><a href="#">Podcast</a></div>
+                    <div class="tags-item"><a href="#">Trực tiếp</a></div>
+                    <div class="tags-item"><a href="#">Đọc rap</a></div>
+                    <div class="tags-item"><a href="#">Bóng đá</a></div>
+                    <div class="tags-item"><a href="#">Du lịch</a></div>
+                    <div class="tags-item"><a href="#">Giải trí</a></div>
+                    <div class="tags-item"><a href="#">Nghe truyện</a></div>
+                </div>
+                <div class="videos">
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/thumnail2.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <label class="mdi mdi-dots-vertical dots-vertical" for="menu-services">
+                                <input type="checkbox" id="menu-services" hidden>
+                                <div class="menu-modal">
+                                    <ul class="menu-modal-top">
+                                        <li><span class="mdi mdi-playlist-play f-size--20 mg-right--20"></span> <span
+                                                class="text-modal">Thêm vào
+                                                danh sách chờ</span></li>
+                                        <li><span class="mdi mdi-clock-outline mg-right--20 f-size--20"></span> <span
+                                                class="text-modal">Lưu vào danh sách Xem sau</span></li>
+                                        <li><span
+                                                class="mdi mdi-content-save-alert-outline mg-right--20 f-size--20"></span>
+                                            <span class="text-modal">Lưu vào danh sách phát</span></li>
+                                        <li><span class="mdi mdi-arrow-collapse-down mg-right--20  f-size--20"></span>
+                                            <span class="text-modal">Tải xuống</span></li>
+                                        <li><span class="mdi mdi-share-outline mg-right--20 f-size--20"></span> <span
+                                                class="text-modal">Chia sẻ</span></li>
+                                    </ul>
+                                    <div class="line-mid"></div>
+                                    <ul class="menu-modal-bot">
+                                        <li><span class="mdi mdi-playlist-play f-size--20 mg-right--20"></span> <span
+                                                class="text-modal">Không quan tâm</span></li>
+                                        <li><span class="mdi mdi-clock-outline mg-right--20 f-size--20"></span> <span
+                                                class="text-modal">Không đề xuất kênh này</span></li>
+                                        <li><span
+                                                class="mdi mdi-content-save-alert-outline mg-right--20 f-size--20"></span>
+                                            <span class="text-modal">Báo cáo vi phạm</span></li>
+                                    </ul>
+                                </div>
+                            </label>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/lillshady.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/sena.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/sena.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/sena.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/sena.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/sena.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/sena.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                    <a class="video-card" href="#">
+                        <div class="thumbnail">
+                            <img src="./img/sena.jpg" alt="Thumbnail Video">
+                            <span class="time-badge">12:02</span>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-text">
+                                <div class="title">Tập trung như một thiên tài: Những thói quen giúp bạn làm...</div>
+                                <div class="channel">V-green News</div>
+                                <div class="stats">2 lượt xem • 4 giờ trước</div>
+                                <span class="badge">Mới</span>
+                            </div>
+                            <span class="mdi mdi-dots-vertical dots-vertical"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
