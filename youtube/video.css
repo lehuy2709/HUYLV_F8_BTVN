@@ -913,7 +913,7 @@ header {
 }
 
 .video-text .channel {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 14px;
     color: #606060;
 }
@@ -1016,7 +1016,7 @@ header {
 
 .badge {
     display: inline-block;
-    margin-top: 7px;
+    margin-top: 0px;
     color: #606060;
     font-weight: 500;
     background-color: rgba(0, 0, 0, 0.05);
