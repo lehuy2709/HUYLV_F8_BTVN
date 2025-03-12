@@ -42,7 +42,7 @@
                                 └──────────────────────────────────────────────────────┘                                                                                     
 */
 var myArray = [6, 9, 1, 5, 4]
-function Sort() {
+function Sort(myArray) {
     let temp
     for (var i = 0; i < myArray.length - 1; i++) {
         for (j = 0; j < myArray.length - 1 - i; j++) {
