@@ -60,7 +60,7 @@ function findCommonNames(arr1, arr2) {
     let duplicateName = {}
     for (let i = 0; i < arr1.length; i++) {
         let findByName = arr1[i].name
-        obj[findByName] = arr1[i].name
+        obj[findByName] = arr1[i].name  
     }
     for (let i = 0; i < arr2.length; i++) {
         findByName = arr2[i].name
