@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Roboto;
+}
+.container {
+    display: flex;
+}
+
+.side-bar {
+    width: 250px;
+    background-color: rgb(28 36 52);
+    height: 100vh;
+    color: white;
+}
+
+.side-bar .logo {
+    font-size: 32px;
+}
+
+.side-bar__header {
+    display: flex;
+    padding: 16px;
+}
+
+.side-bar__item {
+    display: flex;
+    padding: 16px;
+}
+
+.side-bar__header h1 {
+    margin-left: 16px;
+}
+
+.side-bar__item span:first-child {
+    margin: 0 8px 0 16px;
+}
+
+.side-bar__item:hover {
+    background-color: rgb(13, 16, 16);
+    cursor: pointer;
+}
+
+.side-bar__item:nth-of-type(3) {
+    display: block;
+}
+
+.side-bar__item:nth-of-type(3)>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .side-bar__item:nth-of-type(3)>div:first-child:active+div {
+    background: red;
+    display: block;
+} */
+
+.side-bar__item:nth-of-type(3)>div:nth-child(2)>div {
+    display: none;
+}
+
+.side-bar__item__child_item:first-child {
+    margin-top: 16px;
+}
+
+.side-bar__item__child_item {
+    padding: 16px;
+}
+
+#toggle:checked~div {
+    display: block;
+}
+
+.body-container {
+    width: calc(100% - 250px);
+}
+
+.table-header {
+    display: flex;
+}
+
+.table-header__cell {
+    /*background-color: red;*/
+    flex-grow: 0;
+}
+
+.table-header__cell:first-child,
+.table-body .table-body__cell:first-child {
+    width: 64px;
+}
+
+.table-header__cell:last-child,
+.table-body .table-body__cell:last-child {
+    width: 150px;
+}
+
+.table-header__cell:nth-child(2),
+.table-header__cell:nth-child(3),
+.table-body .table-body__cell:nth-child(2),
+.table-body .table-body__cell:nth-child(3) {
+    /*background-color: green;*/
+    flex-grow: 1;
+}
+
+.table-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.table-body,
+.table-header {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.table {
+    max-width: 700px;
+    margin: auto;
+}
+
+.edit-btn,
+.del-btn {
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: green;
+}
+
+.del-btn {
+    background-color: red;
+}
+.modal{
+    position: fixed;
+    padding: 20px;
+    width: 20%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 234, 234);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    border-radius: 5px;
+
+}
+.modal-delete{
+    position: fixed;
+    padding: 20px;
+    top: 20%;
+    width: 20%;
+    left: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 234, 234);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    border-radius: 5px;
+}
+.title-modal{
+    display: flex;
+    justify-content: space-between;
+}
+.title-modal-close{
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 20px;
+
+}
+.modal-footer-close{
+    text-align: center;
+}
+.modal  h4{
+    margin-bottom: 20px;
+    color: #6c757d;
+    text-align: left;
+}
+.input-modal {
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-modal input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+.input-modal label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 5px;
+    color: #aaa;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.input-modal input:focus {
+    border-color: #007bff;
+}
+.input-modal > input:focus + label {
+    top: 0;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.save-block{
+    text-align: left;
+
+}
+.save-btn{
+    padding: 10px;
+}
+.modal-footer{
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #2298ff;
+    border-color: #6c757d;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.btn-yes {
+    color: #fff;
+    background-color: #2298ff;
+    border-color: #6c757d;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.btn-no {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    display: inline-block;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#show-modal:checked ~ .modal {
+    display: block;
+}
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.overlay-del {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#show-modal:checked ~ .overlay {
+    display: block;
+}
+#show-modal-del:checked ~ .modal-delete{
+    display: block;
+}
+#show-modal-del:checked ~ .overlay-del{
+    display: block;
+}
+.mdi-close{
+    color: #6c757d;
+    font-size: 22px;
+    cursor: pointer;
+}
+.modal.active, .overlay.active {
+    display: block;
+}

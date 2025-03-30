@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <header class="side-bar__header">
+                <span class="mdi mdi-stack-overflow logo"></span>
+                <h1>F8 Admin</h1>
+            </header>
+        </div>
+        <div class="body-container">
+            <h2 style="text-align: center">Members</h2>
+            <div class="table">
+                <div class="table-header">
+                    <div class="table-header__cell">Id</div>
+                    <div class="table-header__cell">Name</div>
+                    <div class="table-header__cell">Mail</div>
+                    <div class="table-header__cell">Action</div>
+                </div>
+            </div>
+            <label class="overlay" ></label>
+            <div class="modal">
+                <form>
+                    <div class="title-modal">
+                        <h4>Edit User</h4>
+                        <label for="show-modal" class="mdi mdi-close"></label>
+                    </div>
+                    <div class="input-modal">
+                        <input type="text" id="edit-name" placeholder=" " required>
+                        <label for="edit-name">Tran Van A</label>
+                    </div>
+                    <div class="input-modal">
+                        <input type="email" id="edit-email" placeholder=" " required>
+                        <label for="edit-email">a@test.com</label>
+                    </div>
+                    <div class="modal-footer">
+                        <label for="show-modal" class="btn-secondary">Close</label>
+                        <button type="button" class="btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+            <input type="checkbox" id="show-modal-del" hidden>
+            <label class="overlay-del" for="show-modal-del"></label>
+            <div class="modal-delete">
+                <form>
+                    <div class="title-modal-close">
+                        <h4>Bạn có thực sự muốn xóa không ?</h4>
+                    </div>
+                    <div class="modal-footer-close">
+                        <label class="btn-yes" for="show-modal-del">Yes</label>
+                        <label for="show-modal-del" class="btn-no">No</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
