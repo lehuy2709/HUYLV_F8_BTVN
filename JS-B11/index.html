@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Autocomplete Dropdown</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .autocomplete {
+        width: 250px;
+        position: relative;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px 30px 8px 8px;
+        outline: none;
+        border: 1px solid #8083a6;
+        border-radius: 5px;
+    }
+
+    input:focus {
+        border: 1px solid #4451EB;
+    }
+
+    .clear-btn,
+    .dropdown-btn {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-130%);
+        cursor: pointer;
+        font-size: 16px;
+        color: #999;
+    }
+
+    .dropdown-btn {
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        transform: translateY(-135%);
+        cursor: pointer;
+        font-size: 16px;
+        color: #999;
+    }
+
+    .clear-btn:hover,
+    .dropdown-btn:hover {
+        color: black;
+    }
+
+    .dropdown {
+        border: 1px solid #ccc;
+        max-height: 200px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+    }
+
+    .dropdown .item {
+        width: 100%;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .highlight {
+        background-color: #cad0fb;
+    }
+</style>
+
+<body>
+    <div class="autocomplete">
+        <form autocomplete="off">
+            <input name="name" type="text">
+            <span class="clear-btn">✖</span>
+            <span class="dropdown-btn">▼</span>
+            <div class="dropdown"></div>
+            <input type="submit">
+        </form>
+    </div>
+    <script>
+        const members = [
+            { id: 1, name: 'Trung' },
+            { id: 2, name: 'Dung' },
+            { id: 3, name: 'Luc' },
+            { id: 4, name: 'Son' },
+            { id: 5, name: 'Giang' },
+            { id: 7, name: 'Hoc' },
+            { id: 8, name: 'Dat' },
+            { id: 9, name: 'Huy' },
+            { id: 10, name: 'Vuong' }
+        ];
+
+        let filteredMembers = [...members];
+        const inputElement = document.querySelector('input');
+        const clearButton = document.querySelector('.clear-btn');
+        const dropdownButton = document.querySelector('.dropdown-btn');
+        const listElement = document.querySelector('.dropdown');
+        let cursor = null;
+
+        const onRender = () => {
+            listElement.innerHTML = '';
+            if (filteredMembers.length === 0) {
+                listElement.style.display = 'none';
+                dropdownButton.textContent = '▼';
+                return;
+            }
+            listElement.style.display = 'block';
+            dropdownButton.textContent = '▲';
+
+            filteredMembers.forEach((member, index) => {
+                const div = document.createElement('div');
+                div.classList.add('item');
+                div.textContent = member.name;
+                listElement.appendChild(div);
+
+                div.addEventListener('click', () => {
+                    inputElement.value = member.name;
+                    clearButton.style.display = 'inline';
+                    listElement.style.display = 'none';
+                    dropdownButton.textContent = '▼';
+                });
+            });
+
+            itemElements = Array.from(document.getElementsByClassName('item'));
+        };
+
+        inputElement.addEventListener('input', () => {
+            filteredMembers = members.filter(member => member.name.toLowerCase().includes(inputElement.value.toLowerCase()));
+            cursor = null;
+            clearButton.style.display = inputElement.value ? 'inline' : 'none';
+            onRender();
+        });
+
+        inputElement.addEventListener('keydown', (event) => {
+            if (![40, 38, 13].includes(event.keyCode)) return;
+
+            if (cursor === null) cursor = 0
+            else if (event.keyCode === 40) cursor = cursor + 1
+            else cursor = cursor - 1
+
+            if (cursor === -1) cursor = filteredMembers.length - 1
+            if (cursor === filteredMembers.length) cursor = 0
+
+            itemElements.forEach((item, index) => {
+                item.classList.toggle('highlight', index === cursor);
+            });
+
+            if (event.keyCode === 40 || event.keyCode === 38) {
+                const highlightedItem = itemElements[cursor];
+                if (highlightedItem) {
+                    highlightedItem.scrollIntoView({ block: "nearest", behavior: "smooth" });
+                }
+            }
+
+            if (event.keyCode === 13 && cursor !== null) {
+                inputElement.value = filteredMembers[cursor].name;
+                clearButton.style.display = 'inline';
+                listElement.style.display = 'none';
+                dropdownButton.textContent = '▼';
+                event.preventDefault();
+            }
+        });
+
+        inputElement.addEventListener('focus', () => {
+            listElement.style.display = 'block';
+            dropdownButton.textContent = '▲';
+        });
+
+        dropdownButton.addEventListener('click', () => {
+            const isOpen = listElement.style.display === 'block';
+            listElement.style.display = isOpen ? 'none' : 'block';
+            dropdownButton.textContent = isOpen ? '▼' : '▲';
+        });
+
+        clearButton.addEventListener('click', () => {
+            inputElement.value = '';
+            clearButton.style.display = 'none';
+            filteredMembers = [...members];
+            onRender();
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.autocomplete')) {
+                listElement.style.display = 'none';
+                dropdownButton.textContent = '▼';
+            }
+        });
+
+        onRender();
+    </script>
+</body>
+
+</html>
