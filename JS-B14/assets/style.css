@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.container {
+  width: 1500px;
+  margin: 20px auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-webkit-box {
+  display: -webkit-box;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.text-red {
+  color: #d70018;
+}
+
+.text-grey {
+  color: #707070;
+}
+
+.text-orange {
+  color: #f59e0b;
+}
+
+.f-weight--600 {
+  font-weight: 600;
+}
+
+.f-size--11 {
+  font-size: 11px;
+}
+
+.f-size--13 {
+  font-size: 13px;
+}
+
+.f-size--14 {
+  font-size: 14px;
+}
+
+.f-size--12 {
+  font-size: 12px;
+}
+
+.f-size--16 {
+  font-size: 16px;
+}
+
+.f-weight--700 {
+  font-weight: 700;
+}
+
+.f-size--20 {
+  font-size: 20px;
+}
+
+.mag-bot--32px {
+  margin-bottom: 32px;
+}
+
+.mag-bot--10px {
+  margin-bottom: 10px;
+}
+
+.pad-left--4px {
+  padding-left: 4px;
+}
+
+.card-product {
+  width: calc(20% - 16px);
+  height: auto;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
+  margin: 8px;
+}
+
+.card-product {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-product:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.img>img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.product-name>h3 {
+  color: #444;
+}
+
+.size {
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  color: #3a3a3a;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 1px 5px;
+}
+
+.size:hover {
+  cursor: pointer;
+}
+
+.old-price {
+  text-decoration: line-through;
+  padding-left: 4px;
+}
+
+.introduction {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.introduction>p {
+  line-height: 1.5;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-bottom {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wish-list:hover i {
+  cursor: pointer;
+}
