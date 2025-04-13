@@ -81,31 +81,3 @@ tasks.addEventListener('click', async (e) => {
   }
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // const textSpan = e.target.closest('.task-text')
-  // if (textSpan) {
-  //   const taskItem = textSpan.closest('.task-item')
-  //   console.log(taskItem);
-    
-  //   const taskText = taskItem.querySelector('.task-text').textContent;
-  //   const id = taskItem.dataset.id
-  //   const isCompleted = taskItem.classList.toggle('done')
-
-  //   if (id) {
-  //     await putTask(id, { title: taskText, completed: isCompleted })
-  //   }
-  // }
